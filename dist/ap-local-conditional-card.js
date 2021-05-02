@@ -17,7 +17,7 @@ class LocalConditionalCard extends LitElement {
     }
 
     set hass(hass) {
-        const thisDomain = "local_conditional_card";
+        const thisDomain = "ap-local_conditional_card";
         if (!this._config || !hass) return;
         this._hass = hass;
         if (this._card) {
@@ -112,4 +112,4 @@ class LocalConditionalCard extends LitElement {
     }
 }
 
-customElements.define('local-conditional-card', LocalConditionalCard);
+customElements.define('ap-local-conditional-card', LocalConditionalCard);
